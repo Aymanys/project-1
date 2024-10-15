@@ -1,0 +1,35 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f0f0f0;
+  padding: 40px;
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+#word-display,
+#guessed-letters,
+#remaining-tries,
+#game-message,
+#hint-display,
+#definition-display {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 15px 25px;
+  font-size: 18px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: #3e8e41;
+}
