@@ -67,6 +67,7 @@ const guessedEl = document.getElementById('guessed-letters')
 
 /*-------------------------------- Functions --------------------------------*/
 function initializeGame() {
+  //reset status
   wrongGuesses = 0
   guessedLetters = []
   remainedTries = maxWrongTries

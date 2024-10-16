@@ -1,38 +1,60 @@
-"Space Word Guess Game"
-1- The first step is to create a list of space-related words along with their definitions that will be used as Hints I put them in the Constant Categories:
-For example:
-1 - "Galaxy": A system of stars, stellar remnants, interstellar gas, dust, and dark matter bound together by gravity.
+#"Steps to Build the Game - Space Words"
 
-- Randomly selecting the words and its related definitions.
-- A placeholder to hold the letters
+Before starting with HTML and JavaScript, it’s essential to plan the game flow. I drew a rough sketch of how the game should work. Here are the key components I planned:
 
-2- Displaying info of the game:
+- Space Words: A list of space-related terms.
+- Definitions: Used as hints when the player struggles.
+- Underscores: Represent the unguessed letters of the word.
+- Buttons: One button for starting a new game and another for revealing the hint.
 
-- Show the definition of the word.
-- The words should be shown as empty (\_\_ \_\_ \_\_ \_\_), taking into consideration the numbers of letters.
+I followed a structured approach to make the code organized and manageable. I set categories like Constants, Variables, Cached Element References, Functions, and Event Listeners to keep things clear.
 
-3- Variables
+I searched for space-related words and their definitions online. These words are stored in an array under the Constants section in the code. Each word is paired with its definition to provide the hint when needed.
 
-- Incorrect number of guesses (5 wrong guesses)
-- Number of trials (incorrect guesses)
-- A placeholder to store the correct guesses
+**Challenges with Functions**
+Writing the functions was the most challenging part of this project. I often referred back to my notes and assignments to remember how to structure functions, especially for handling user input and displaying the game state.
 
-4- Loop:
+_1- Handling Guesses:_
+I used handleGuesses to capture the player's input and determine if the guess was correct or incorrect. If correct, the display updates to show the guessed letters. If incorrect, the number of remaining tries decreases.
 
-- Input a letter
+_2- Displaying the Word:_
+The word is displayed with underscores, and as the player guess the right letter, the letter is shown; otherwise, the number of incorrect guesses increases.
 
-If correct
-display should be updated
+_3-Game End:_
+The game ends when the player either guess the word or runs out of tries
 
-else
+**_Summary_**
+This project helped me to practice JavaScrip mainly, i did not do much with the HTML and CSS. The functionality part was very challenging, but resources, GA notes and asking peers and co-workers helped to get this project to reach a working stage.
 
-- number of incorrect answer (add to the counter)
+**Area for Improvement**
+1- I believe if I had a clear plan at the beginning of the project, then I would not struggle as I struggled with this. I went ahead with a similar game where I guess the word as a whole (not the letter) and thena press a button to check if the word selected is right or wrong. I ended up doing redoing the project is hangman alike game. The good thing, that I used many of the codes in that game in this, which saved a lot of time. Also I learned how to do a bit complex loop functions.
+2- I wish I practiced more so I would be able to write codes without the need of looking up the internet all time, or reverting back to my notes to be able to write the code correctly.
+3- I think i need to utilize the Saturday class in the upcoming period.
 
-Now the software should do the following:
-1 - check if the player won (guessed the word).
-2- check the player lost (Did not guesses the word).
+_Resources_
 
-5- Game Ending
+> How to sequence/flow the game and get the functionality of the game
 
-- Player guessed the word (You Win!)
-- Player used the 5 guesses (You lose! Fatality!)
+[Online Resource1] (https://codesandbox.io/p/sandbox/z9fhk)
+
+[Online Resources1] (https://www.youtube.com/watch?v=dgvyE1sJS3Y)
+
+[Online Resource3] (https://www.geeksforgeeks.org/build-a-hangman-game-using-javascript/?utm_source=auth&utm_medium=saved&utm_campaign=articles)
+
+[Online Resource4] (https://stackoverflow.com/questions/55433937/designing-javascript-hangman-guessing-game-for-my-homework-assignment-but-cant)
+
+> Converting a captured letter to upperCase
+
+[Online Resource] (https://www.colors.shecodes.io/athena/39504-how-to-change-text-input-to-uppercase-in-javascript#google_vignette)
+
+> Validating the guessedLetter
+
+[Online Resource] (https://stackoverflow.com/questions/60784810/im-writing-a-guessing-game-in-javascript-i-dont-know-how-to-validate-that-the)
+
+> Using include in JavaScript
+
+[Online Resource] (https://www.w3schools.com/jsref/jsref_includes.asp)
+
+> Understanding the counter function
+
+[Online Resource] (https://stackoverflow.com/questions/33609974/trying-to-display-the-amount-of-guesses-that-is-left-in-a-hangman-game)
