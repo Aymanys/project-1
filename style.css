@@ -1,35 +1,46 @@
 body {
   font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: black;
+  margin: 0;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
   font-size: 24px;
-  text-align: center;
-  background-color: #eef0efa9;
-  padding: 40px;
+  border: 2px solid white;
 }
 
-h1 {
-  color: #333;
-  margin-bottom: 20px;
-}
-
-#word-display #guessed-letters,
-#remaining-tries,
-#game-message,
-#hint-display,
-#definition-display {
-  font-size: 24px;
-  margin-bottom: 20px;
-}
-
-button {
-  padding: 15px 25px;
-  font-size: 18px;
-  background-color: #4caf50;
-  color: white;
+.box.show {
+  background-color: blue;
   cursor: pointer;
-  border: none;
-  margin-top: 20px;
 }
 
-button:hover {
-  background-color: #3e8e41;
+#grid {
+  display: flex;
+  gap: 30px;
+}
+
+#gameOverMessage {
+  display: none;
+  color: red;
+  font-size: 36px;
+  text-align: center;
+  margin: 20px 0;
+}
+
+#restartButton {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: red;
+  margin-top: 20px;
 }
